@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>The Humble Shop Owner</title>
+	<link rel="shortcut icon" type="image/png" href="http://images.clipartpanda.com/shop-clipart-RcAegqXcL.jpeg"/>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto+Condensed:300,400,700" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+</head>
+
+<!--
+
+Storyline:
+
+You start as a humble shop owner who, as he gains more money, upgrades his shop and eventually buys the shops around him.
+Then, he starts buying water, electricity, and gas companies until he owns the entire city.
+He declares independance and builds up a military to conquer the rest of the country.
+After this he engages in international war and gains control of the world.
+Space mining follows and intergalactic conquest ensues.
+
+Ascension:
+
+Begin as a shop owner on a different planet with customers more willing to buy.
+[Come up with more later]
+
+-->
+
+<body>
+<div class="container">
+
+  <!-- Nav tabs -->
+  		<ul class="nav nav-tabs" role="tablist">
+   			<li role="presentation" onclick="activeShop()" class="navbarTab active"><a href="#shop" aria-controls="shop" role="tab" data-toggle="tab">Your Shop</a></li>
+	    	<li role="presentation" onclick="activeUpgrades()" id="upgradeTab" class="navbarTab"><a href="#upgrades" aria-controls="upgrades" role="tab" data-toggle="tab">Upgrades</a></li>
+	    	<li role="presentation" onclick="activeWorld()" class="navbarTab"><a href="#world" aira-control="world" role="tab" data-toggle="tab">World</a></li>
+	   		<li role="presentation" onclick="activeStats()" class="navbarTab"><a href="#stats" aria-controls="stats" role="tab" data-toggle="tab">Stats</a></li>
+	   		<li role="presentation" onclick="activeSettings()" class="navbarTab"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+	   		<li role="presentation" onclick="activeMoney()" class="navbarTab"><a href="#money" aria-controls="money" role="tab" data-toggle="tab">Money: <span id="money">0</span></a></li>
+		</ul>
+
+  <!-- Tab panes -->
+  		<div class="tab-content">
+  			<!-- Shop -->
+    		<div role="tabpanel" class="tab-pane fade in active" id="shop">
+    			<button id="startButton" onclick="startGame()" class="btn btn-primary">
+					Click To Start Your Humble Beginnings
+				</button>
+				<div class="w3-animate-opacity">
+					<button id="flyerButton" onclick="makeFlyer(1)" class="btn btn-info hidden">
+						Put up a flyer to advertise your business
+					</button>
+				</div>
+    		</div>
+
+    		<!-- Upgrades -->
+    		<div role="tabpanel" class="tab-pane fade" id="upgrades">
+    			<span>
+    				HI
+    			</span>
+    		</div>
+
+    		<!-- World -->
+    		<div role="tabpanel" class="tab-pane fade" id="world">
+    			
+    		</div>
+
+    		<!-- Stats -->
+    		<div role="tabpanel" class="tab-pane fade" id="stats">
+    			
+    		</div>
+
+    		<!-- Settings -->
+    		<div role="tabpanel" class="tab-pane fade" id="settings">
+    			
+    		</div>
+
+  		</div>
+
+</div>
+
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="../bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+</body>
